@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(C_LAB
-        Q3.cpp
+
+        Q4.cpp
 
 
 )
