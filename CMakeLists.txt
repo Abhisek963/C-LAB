@@ -7,7 +7,8 @@ include_directories(.)
 
 add_executable(C_LAB
 
-        Q4.cpp
+
+        Q5.cpp
 
 
 )
