@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/abhis/CLionProjects/C$ Programming/C-LAB/cmake-b
 
 build cmake_object_order_depends_target_C_LAB: phony || CMakeFiles/C_LAB.dir
 
-build CMakeFiles/C_LAB.dir/Q14.cpp.obj: CXX_COMPILER__C_LAB_unscanned_Debug C$:/Users/abhis/CLionProjects/C$ Programming/C-LAB/Q14.cpp || cmake_object_order_depends_target_C_LAB
-  DEP_FILE = CMakeFiles\C_LAB.dir\Q14.cpp.obj.d
+build CMakeFiles/C_LAB.dir/Q15.cpp.obj: CXX_COMPILER__C_LAB_unscanned_Debug C$:/Users/abhis/CLionProjects/C$ Programming/C-LAB/Q15.cpp || cmake_object_order_depends_target_C_LAB
+  DEP_FILE = CMakeFiles\C_LAB.dir\Q15.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/abhis/CLionProjects/C Programming/C-LAB/."
   OBJECT_DIR = CMakeFiles\C_LAB.dir
@@ -64,7 +64,7 @@ build CMakeFiles/C_LAB.dir/Q14.cpp.obj: CXX_COMPILER__C_LAB_unscanned_Debug C$:/
 #############################################
 # Link the executable C_LAB.exe
 
-build C_LAB.exe: CXX_EXECUTABLE_LINKER__C_LAB_Debug CMakeFiles/C_LAB.dir/Q14.cpp.obj
+build C_LAB.exe: CXX_EXECUTABLE_LINKER__C_LAB_Debug CMakeFiles/C_LAB.dir/Q15.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C_LAB.dir
