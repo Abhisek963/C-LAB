@@ -1,29 +1,23 @@
-//Wap in c to add fibonacci series using recursion.
-#include <stdio.h>
-
-
-int fibonacci(int n) {
-    if (n == 0) {
-        return 0;
-    } else if (n == 1) {
-        return 1;
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
-    }
-}
+//Wap in c++ program to implement reverse floyd's triangle
+#include <iostream>
+using namespace std;
 
 int main() {
-    int n, i;
+    int rows, num = 1;
 
 
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
+    cout << "Enter the number of rows: ";
+    cin >> rows;
 
 
-    printf("Fibonacci Series: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", fibonacci(i));
+    int totalNumbers = (rows * (rows + 1)) / 2;
+
+
+    for (int i = rows; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            cout << totalNumbers-- << " ";
+        }
+        cout << endl;
     }
-    printf("\n");
 
 }
