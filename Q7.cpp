@@ -4,7 +4,7 @@ int main()
 {
     char string[40];
     int length=0,flag=1;
-    printf("Enter string:");
+    printf("Enter string :");
     gets(string);
     for(int i=0;string[i]!='\0';i++)
     {
