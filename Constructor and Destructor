@@ -1,0 +1,47 @@
+//Wp in c++ Implement default constructor, parameterized constructor, copy constructor,constructor with default argument, destructor
+
+#include <iostream>
+using namespace std;
+
+class MyClass {
+private:
+    int value;
+
+public:
+    MyClass() : value(0) {
+        cout << "Default constructor called. Value = " << value << endl;
+    }
+    MyClass(int val) : value(val) {
+        cout << "Parameterized constructor called. Value = " << value << endl;
+    }
+    MyClass(const MyClass &obj) : value(obj.value) {
+        cout << "Copy constructor called. Value = " << value << endl;
+    }
+    ~MyClass() {
+        cout << "Destructor called. Value = " << value << endl;
+    }
+    static MyClass createWithDefault(int val = 10) {
+        return MyClass(val);
+    }
+    void display() {
+        cout << "Value = " << value << endl;
+    }
+};
+int main() {
+    cout << "Creating obj1 using default constructor:\n";
+    MyClass obj1; 
+    cout << "\nCreating obj2 using parameterized constructor:\n";
+    MyClass obj2(42); 
+    cout << "\nCreating obj3 using copy constructor:\n";
+    MyClass obj3(obj2); 
+    cout << "\nCreating obj4 using static method with default argument:\n";
+    MyClass obj4 = MyClass::createWithDefault(); 
+    MyClass obj5 = MyClass::createWithDefault(25); 
+    cout << "\nDisplaying values:\n";
+    obj1.display();
+    obj2.display();
+    obj3.display();
+    obj4.display();
+    obj5.display();
+
+}
